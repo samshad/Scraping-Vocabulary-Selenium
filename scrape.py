@@ -10,7 +10,7 @@ chrome_options = Options()
 chrome_options.add_argument("-incognito")
 browser = webdriver.Chrome(webdriver_path, options=chrome_options)
 
-url = 'https://www.vocabulary.com/lists/330127'
+url = 'https://www.vocabulary.com/lists/337395'
 browser.get(url)
 
 word_section = browser.find_elements_by_css_selector('.explore')[0]
@@ -45,4 +45,4 @@ for entry in entries:
 
 browser.quit()
 df = pd.DataFrame(arr, columns=['word', 'meaning', 'short definition', 'long definition', 'url'])
-df.to_csv('wordlist-1.csv', index=False)
+df.to_csv('wordlist-2.csv', index=False)

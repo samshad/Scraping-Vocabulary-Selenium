@@ -2,4 +2,6 @@
 venv
 chromedriver_win32
 wordlist-1.csv
+Data/
+Auth/
 
